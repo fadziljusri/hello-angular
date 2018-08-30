@@ -1,0 +1,58 @@
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-title">Dashboard</li>
+            <li class="nav-item">
+                <a [routerLink]="['/' + AppRoutes.userDashboard + '/' + AppRoutes.userExample1]" routerLinkActive="active" class="nav-link nav-routerlink">
+                    <i class="fas fa-umbrella"></i> Example 1
+                </a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/' + AppRoutes.userDashboard + '/' + AppRoutes.userExample2]" routerLinkActive="active" class="nav-link nav-routerlink">
+                    <i class="fas fa-umbrella"></i> Example 2
+                </a>
+            </li>
+
+            <li class="nav-title">More</li>
+            <li class="nav-item nav-dropdown">
+                <a href="#" class="nav-link nav-dropdown-toggle">
+                    <i class="fas fa-umbrella"></i> Pages
+                    <i class="fa fa-caret-left"></i>
+                </a>
+
+                <ul class="nav-dropdown-items">
+
+                    <li class="nav-item">
+                        <a routerLink="/{{AppRoutes.login}}" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a routerLink="/{{AppRoutes.register}}" class="nav-link">
+                            <i class="fas fa-sign-out-alt"></i> Register
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a routerLink="/{{AppRoutes.p404}}" class="nav-link">
+                            <i class="fas fa-exclamation-circle"></i> 404
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a routerLink="/{{AppRoutes.p500}}" class="nav-link">
+                            <i class="fas fa-exclamation-circle"></i> 500
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{GhLink}}" target="_blank" class="nav-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
