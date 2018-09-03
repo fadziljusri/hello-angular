@@ -8,10 +8,11 @@ import { AppRoutes} from '../app.constants';
 })
 export class LoginComponent implements OnInit {
 
+  AppRoutes = AppRoutes;
   login = {
     email: 'test@test.com',
     password: 'whydoyouwanttoknowthispassword'
-  }
+  };
 
   constructor(private router: Router ) { }
 
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit {
   }
 
   doLogin() {
-    this.router.navigate([AppRoutes.userDashboard]);
+    this.router.navigate([this.AppRoutes.userDashboard]);
   }
 
 }

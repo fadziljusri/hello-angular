@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
   templateUrl: './register.component.html',
 })
 export class RegisterComponent implements OnInit {
-
+  
+  AppRoutes = AppRoutes;
   r = {
     name: 'test',
     email: 'test@gmail.com',
     password: 'p@ssw0rd',
     rePassword: 'p@ssw0rd'
-  }
+  };
 
   constructor(private _router: Router) { }
 
@@ -22,7 +23,7 @@ export class RegisterComponent implements OnInit {
   }
 
   doReg(){
-    this._router.navigate([AppRoutes.userDashboard]);
+    this._router.navigate([this.AppRoutes.userDashboard]);
   }
 
 }
