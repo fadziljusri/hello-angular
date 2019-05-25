@@ -9,4 +9,4 @@ export const AppRoutes = {
     p500: '500'
 };
 
-export const GhLink = 'https://github.com/fadziljusri/Hello-Angular';
+export const GhLink = 'https://github.com/fadziljusri/hello-angular';
